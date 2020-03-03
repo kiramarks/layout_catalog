@@ -14,7 +14,7 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 944px;
+    max-width: calc(200px * 4 + 3 * 48px);
     margin: 0 40px 28px; }
   .catalog__item {
     margin-bottom: 50px; }
