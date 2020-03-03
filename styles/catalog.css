@@ -1,0 +1,22 @@
+.catalog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .catalog__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 944px;
+    margin: 0 40px 28px; }
+  .catalog__item {
+    margin-bottom: 50px; }
+
+/*# sourceMappingURL=catalog.css.map */
