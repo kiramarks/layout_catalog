@@ -64,9 +64,9 @@
     position: absolute;
     width: 100%;
     bottom: 0;
+    height: 4px;
     background: #00acdc;
-    border-radius: 8px;
-    height: 4px; }
+    border-radius: 2px; }
 
 .catalog {
   display: -webkit-box;
@@ -109,6 +109,7 @@
     height: 134px;
     margin: 0 auto 45px; }
   .product__name {
+    margin-top: 0;
     margin-bottom: 5px;
     font-family: "Roboto", "Arial", sans serif;
     font-weight: 500;
@@ -116,6 +117,7 @@
     line-height: 15px;
     color: #000; }
   .product__code {
+    margin-top: 0;
     margin-bottom: 15px;
     font-family: "Roboto", "Arial", sans serif;
     font-size: 11px;
@@ -139,12 +141,16 @@
   .product__star {
     height: 15px;
     width: 15px;
-    background-image: url("../images/star-active.svg");
+    background-image: url("../images/star.svg");
     background-repeat: no-repeat;
     background-position: center;
     margin-right: 4px; }
-  .product__star:last-child {
-    background-image: url("../images/star.svg"); }
+  .product__stars--1 .product__star:nth-child(1),
+  .product__stars--2 .product__star:nth-child(-n+2),
+  .product__stars--3 .product__star:nth-child(-n+3),
+  .product__stars--4 .product__star:nth-child(-n+4),
+  .product__stars--5 .product__star:nth-child(-n+5) {
+    background-image: url("../images/star-active.svg"); }
   .product__reviews {
     font-family: "Roboto", "Arial", sans serif;
     line-height: 13px;
@@ -173,32 +179,33 @@
     font-size: 16px;
     line-height: 19px;
     color: #000; }
-  .product__buy-button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background: #00acdc;
-    border: 1px solid #00acdc;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    border-radius: 5px;
-    color: #fff;
-    line-height: 40px;
-    font-size: 14px;
-    font-weight: 600;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-family: "Roboto", "Arial", sans serif; }
-    .product__buy-button:hover {
-      background-color: #fff;
-      color: #00acdc; }
+
+.buy-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #00acdc;
+  border: 1px solid #00acdc;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  color: #fff;
+  line-height: 40px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Roboto", "Arial", sans serif; }
+  .buy-button:hover {
+    background-color: #fff;
+    color: #00acdc; }
 
 body {
   margin: 0; }

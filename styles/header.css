@@ -64,8 +64,8 @@
     position: absolute;
     width: 100%;
     bottom: 0;
+    height: 4px;
     background: #00acdc;
-    border-radius: 8px;
-    height: 4px; }
+    border-radius: 2px; }
 
 /*# sourceMappingURL=header.css.map */
