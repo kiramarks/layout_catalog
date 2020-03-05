@@ -21,7 +21,7 @@
     .product__image-wrapper:hover {
       -webkit-transform: scale(1.2);
               transform: scale(1.2);
-      border: 3px solid rgba(0, 0, 0, 0.1);
+      outline: 3px solid rgba(0, 0, 0, 0.1);
       border-radius: 5px;
       cursor: pointer; }
   .product__image {
