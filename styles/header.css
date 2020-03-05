@@ -52,9 +52,12 @@
   line-height: 14px;
   text-transform: uppercase;
   color: #000;
-  text-decoration: none; }
+  text-decoration: none;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s; }
   .nav__link:hover {
-    color: #00acdc; }
+    color: #00acdc;
+    cursor: pointer; }
 
 .is-active {
   color: #00acdc; }

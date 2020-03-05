@@ -16,7 +16,14 @@
   .product__image {
     width: 160px;
     height: 134px;
-    margin: 0 auto 45px; }
+    margin: 0 auto 45px;
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s; }
+    .product__image:hover {
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2);
+      outline: 3px solid rgba(0, 0, 0, 0.1);
+      cursor: pointer; }
   .product__name {
     margin-top: 0;
     margin-bottom: 5px;
@@ -60,13 +67,18 @@
   .product__stars--4 .product__star:nth-child(-n+4),
   .product__stars--5 .product__star:nth-child(-n+5) {
     background-image: url("../images/star-active.svg"); }
+  .product__reviews, .product__price-title {
+    font-size: 11px; }
   .product__reviews {
     font-family: "Roboto", "Arial", sans serif;
     line-height: 13px;
     text-align: right;
-    color: #000; }
-  .product__reviews, .product__price-title {
-    font-size: 11px; }
+    color: #000;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s; }
+    .product__reviews:hover {
+      color: #00acdc;
+      cursor: pointer; }
   .product__price {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -111,7 +123,9 @@
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  font-family: "Roboto", "Arial", sans serif; }
+  font-family: "Roboto", "Arial", sans serif;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s; }
   .buy-button:hover {
     background-color: #fff;
     color: #00acdc; }
