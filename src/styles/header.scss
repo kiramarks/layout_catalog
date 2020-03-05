@@ -50,9 +50,11 @@
     text-transform: uppercase;
     color: #000;
     text-decoration: none;
+    transition-duration: 0.5s;
 
     &:hover {
       color: $activeColor;
+      cursor: pointer;
     }
   }
 }

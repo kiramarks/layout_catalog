@@ -14,6 +14,13 @@
     width: 160px;
     height: 134px;
     margin: 0 auto 45px;
+    transition-duration: 1s;
+
+    &:hover {
+      transform: scale(1.2);
+      outline: 3px solid rgba(0,0,0,0.1);
+      cursor: pointer;
+    }
   }
 
   &__name {
@@ -63,16 +70,22 @@
     background-image: url("../images/star-active.svg");
   }
 
+  &__reviews,
+  &__price-title {
+    font-size: 11px;
+  }
+
   &__reviews {
     font-family: $textFonts;
     line-height: 13px;
     text-align: right;
     color: #000;
-  }
+    transition-duration: 0.5s;
 
-  &__reviews,
-  &__price-title {
-    font-size: 11px;
+    &:hover {
+      color: $activeColor;
+      cursor: pointer;
+    }
   }
 
   &__price {
@@ -113,6 +126,7 @@
   text-transform: uppercase;
   text-decoration: none;
   font-family: $textFonts;
+  transition-duration: 1s;
 
   &:hover {
     background-color: #fff;
