@@ -11,14 +11,13 @@
   border-radius: 5px;
 
   &__image-wrapper {
-    margin: 15px auto 35px;
+    margin: 15px auto 28px;
     padding: 11px 0;
     transition-duration: 1s;
 
     &:hover {
       transform: scale(1.2);
       outline: 3px solid rgba(0,0,0,0.1);
-      border-radius: 5px;
       cursor: pointer;
     }
   }
@@ -51,11 +50,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 23px;
   }
 
   &__stars {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
   }
 
   &__star {
@@ -116,7 +116,8 @@
 }
 
 .buy-button {
-  display: flex;
+  display: grid;
+  grid-template-rows: 1fr;
   align-items: center;
   justify-content: center;
   background: $activeColor;
