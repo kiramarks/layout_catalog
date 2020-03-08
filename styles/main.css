@@ -1,10 +1,6 @@
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  display: grid;
+  justify-items: end;
   position: relative;
   padding: 0 50px;
   margin-bottom: 50px;
@@ -72,25 +68,13 @@
     border-radius: 2px; }
 
 .catalog {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  display: grid;
+  justify-items: center; }
   .catalog__items {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     max-width: calc(200px * 4 + 3 * 48px);
-    margin: 0 40px 28px; }
-  .catalog__item {
-    margin-bottom: 50px; }
+    grid-gap: 50px; }
 
 .product {
   width: 200px;
@@ -108,7 +92,7 @@
   border: 1px solid #f3f3f3;
   border-radius: 5px; }
   .product__image-wrapper {
-    margin: 15px auto 35px;
+    margin: 15px auto 28px;
     padding: 11px 0;
     -webkit-transition-duration: 1s;
             transition-duration: 1s; }
@@ -116,7 +100,6 @@
       -webkit-transform: scale(1.2);
               transform: scale(1.2);
       outline: 3px solid rgba(0, 0, 0, 0.1);
-      border-radius: 5px;
       cursor: pointer; }
   .product__image {
     width: 160px;
@@ -146,11 +129,10 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: 20px; }
+    margin-bottom: 23px; }
   .product__stars {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); }
   .product__star {
     height: 15px;
     width: 15px;
@@ -199,9 +181,8 @@
     color: #000; }
 
 .buy-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
+  grid-template-rows: 1fr;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
