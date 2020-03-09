@@ -5,6 +5,6 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     max-width: calc(200px * 4 + 3 * 48px);
-    grid-gap: 50px; }
+    grid-gap: 48px; }
 
 /*# sourceMappingURL=catalog.css.map */
