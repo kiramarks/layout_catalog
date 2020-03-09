@@ -11,7 +11,7 @@
   border-radius: 5px;
 
   &__image-wrapper {
-    margin: 15px auto 28px;
+    margin: 19px auto 30px;
     padding: 11px 0;
     transition-duration: 1s;
 
@@ -50,7 +50,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 23px;
+    margin-bottom: 20px;
   }
 
   &__stars {
@@ -101,6 +101,7 @@
   }
 
   &__price-title {
+    padding-top: 3px;
     font-family: $textFonts;
     line-height: 13px;
     color: #000;
