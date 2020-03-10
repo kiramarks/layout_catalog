@@ -13,7 +13,7 @@
   &__image-wrapper {
     margin: 19px auto 30px;
     padding: 11px 0;
-    transition-duration: 1s;
+    transition: transform 1s;
 
     &:hover {
       transform: scale(1.2);
