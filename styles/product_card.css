@@ -16,8 +16,10 @@
   .product__image-wrapper {
     margin: 19px auto 30px;
     padding: 11px 0;
-    -webkit-transition-duration: 1s;
-            transition-duration: 1s; }
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s; }
     .product__image-wrapper:hover {
       -webkit-transform: scale(1.2);
               transform: scale(1.2);
